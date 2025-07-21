@@ -1,0 +1,28 @@
+general {
+  colors = true
+  color_good = "#a3be8c"
+  color_bad  = "#bf616a"
+  color_degraded = "#ebcb8b"
+  interval = 1
+  separator = "|"
+}
+
+order += "cpu_usage"
+order += "battery all"
+order += "memory"
+
+cpu_usage {
+  format = "Cpu: %usage"
+}
+
+battery all {
+  format = "BAT0: %percentage"
+  last_full_capacity = true
+  threshold_type=percentage
+  low_threshold=10
+}
+
+memory {
+  memory_used_method = classical
+  format="Memory: %used/%total"
+}

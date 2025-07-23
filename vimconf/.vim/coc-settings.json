@@ -1,0 +1,19 @@
+{
+    "sumneko-lua.enable": true,
+    "Lua.workspace.library": [
+        "../minecraft-cc/doc/CC-Tweaked-EmmuLua"
+    ],
+    "Lua.workspace.maxPreload": 2000,
+    "Lua.workspace.preloadFileSize": 1000,
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.runtime.builtin": {
+        "os": "disable",
+        "io": "disable"
+    },
+    "Lua.diagnostics.enable": true,
+    "Lua.diagnostics.globals": [],
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ],
+    "Lua.completion.keywordSnippet": "Disable"
+}
